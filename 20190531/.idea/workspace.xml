@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f2d2a8b-2bce-4354-ad1e-07e480419424" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/03-Fizz-Buzz/starter-code/FizzBuzz/target/" />
+    <ignored path="$PROJECT_DIR$/04-Loan-Calculator/starter-code/LoanCalculator/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/trilogyed/HowManyTimesTo7.java" />
+        <option value="$PROJECT_DIR$/03-Fizz-Buzz/starter-code/FizzBuzz/src/main/java/com/company/FizzBuzz.java" />
+        <option value="$PROJECT_DIR$/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1000" />
+    <option name="y" value="25" />
+    <option name="width" value="835" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="01-Hi-Lo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="01-Hi-Lo" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="01-Hi-Lo" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="HiLo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="03-Fizz-Buzz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="03-Fizz-Buzz" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="03-Fizz-Buzz" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="FizzBuzz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="03-Fizz-Buzz" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="FizzBuzz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="03-Fizz-Buzz" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="FizzBuzz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="03-Fizz-Buzz" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="FizzBuzz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="05-Prime-Finder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how_many_times_to_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190531" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.LoanCalculatorTest">
+    <configuration name="HowManyTimesTo7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.HowManyTimesTo7" />
+      <module name="20190531" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.LoanCalculator" />
+      <module name="LoanCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FizzBuzzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FizzBuzz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.FizzBuzzTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LoanCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.LoanCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoanCalculatorTest" />
+        <item itemvalue="Application.LoanCalculator" />
+        <item itemvalue="JUnit.FizzBuzzTest" />
+        <item itemvalue="Application.HowManyTimesTo7" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f2d2a8b-2bce-4354-ad1e-07e480419424" name="Default Changelist" comment="" />
+      <created>1559262383085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559262383085</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="FizzBuzzTest - 2019.05.30 at 21h 57m 52s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest - 2019.05.30 at 21h 58m 32s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest - 2019.05.30 at 21h 59m 56s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest - 2019.05.30 at 22h 00m 42s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.05.30 at 22h 36m 12s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.05.30 at 22h 38m 04s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.05.30 at 22h 39m 50s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.05.30 at 22h 42m 36s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.05.30 at 22h 43m 31s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.05.30 at 22h 44m 28s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trilogyed/HowManyTimesTo7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-How-many-times-to-7/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Fizz-Buzz/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Fizz-Buzz/starter-code/FizzBuzz/src/main/java/com/company/FizzBuzz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Loan-Calculator/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Loan-Calculator/starter-code/LoanCalculator/testfiles/inputs/input1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Loan-Calculator/starter-code/LoanCalculator/testfiles/inputs/input2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Loan-Calculator/starter-code/LoanCalculator/testfiles/inputs/input0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Loan-Calculator/starter-code/LoanCalculator/src/test/java/com/company/LoanCalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_211/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-Prime-Finder/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>20190531</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
