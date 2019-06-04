@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FizzBuzz" />
-        <module name="how_many_times_to_7" />
-        <module name="20190531" />
-        <module name="LoanCalculator" />
+        <module name="RectPavingCompany" />
+        <module name="U1-M1-L5-katas" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RectPavingCompany" target="1.8" />
+      <module name="U1-M1-L5-katas" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
