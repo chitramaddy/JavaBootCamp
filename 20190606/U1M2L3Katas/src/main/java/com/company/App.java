@@ -35,9 +35,13 @@ public class App {
        Car car = new Car ("Honda" ,"Accord",  "Sedan", "Blue", "2.6L V6", "CVT",  4,31.7, 25218  );
     return car;
    }
-//
-//   public static ComputerMouse createComputerMouse(){
-//       ComputerMouse computerMouse = new ComputerMouse("Razer", "Naga", 960, 540, [0],[0]);     return computerMouse;
-//   }
+
+   public static ComputerMouse createComputerMouse(){
+       int[] lCL = new int[]{0,0};
+
+
+       ComputerMouse computerMouse = new ComputerMouse("Razer", "Naga", 960, 540, lCL);
+       return computerMouse;
+   }
 
 }

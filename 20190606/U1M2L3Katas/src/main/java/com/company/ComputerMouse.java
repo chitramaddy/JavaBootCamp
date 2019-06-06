@@ -8,12 +8,13 @@ public class ComputerMouse {
     private int yPosition;
     private int[] lastClickedLocation;
 
-    public ComputerMouse(String manufacturer, String model, int xPosition, int yPosition, int[] lastClickedLocation) {
+    public ComputerMouse (String manufacturer, String model, int xPosition, int yPosition, int[] lastClickedLocation ) {
         this.manufacturer = manufacturer;
         this.model = model;
         this.xPosition = xPosition;
         this.yPosition = yPosition;
         this.lastClickedLocation = lastClickedLocation;
+
     }
 
     public void move(int deltaX, int deltaY) {
@@ -68,5 +69,6 @@ public class ComputerMouse {
 
     public void setLastClickedLocation(int[] lastClickedLocation) {
         this.lastClickedLocation = lastClickedLocation;
+
     }
 }
