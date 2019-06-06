@@ -92,21 +92,21 @@ public class AppTest {
          assertEquals(expect, 25218, car.getMilesDriven());
      }
 
-//     @Test
-//     public void testComputerMouse() {
-//
-//         ComputerMouse computerMouse = App.createComputerMouse();
-//
-//         String expect = "Expected method to return a ComputerMouse object";
-//         assertTrue(expect, computerMouse instanceof ComputerMouse);
-//
-//         expect = "Values should be as described in spec";
-//         assertEquals(expect, "Razer", computerMouse.getManufacturer());
-//         assertEquals(expect, "Naga", computerMouse.getModel());
-//         assertEquals(expect, 960, computerMouse.getxPosition());
-//         assertEquals(expect, 540, computerMouse.getyPosition());
-//         assertArrayEquals(expect, new int[] {0,0}, computerMouse.getLastClickedLocation());
-//     }
+     @Test
+     public void testComputerMouse() {
+
+         ComputerMouse computerMouse = App.createComputerMouse();
+
+         String expect = "Expected method to return a ComputerMouse object";
+         assertTrue(expect, computerMouse instanceof ComputerMouse);
+
+         expect = "Values should be as described in spec";
+         assertEquals(expect, "Razer", computerMouse.getManufacturer());
+         assertEquals(expect, "Naga", computerMouse.getModel());
+         assertEquals(expect, 960, computerMouse.getxPosition());
+         assertEquals(expect, 540, computerMouse.getyPosition());
+         assertArrayEquals(expect, new int[] {0,0}, computerMouse.getLastClickedLocation());
+     }
 
 
 }

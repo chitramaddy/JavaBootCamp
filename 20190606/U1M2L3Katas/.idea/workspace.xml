@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d91e1ce-d1c1-4ba2-9a25-f852ad9646de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/ClassesPractice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/U1M2L2Katas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/main/java/placeholder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/test/java/com/company/AllKatasTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/test/java/com/company/CarTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/test/java/com/company/CoffeeMakerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/test/java/com/company/ComputerMouseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/test/java/com/company/MicrowaveTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/test/java/com/company/RadioTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M2L2Katas/src/test/java/com/company/TVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190605/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190605/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/ComputerMouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/ComputerMouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/AppTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +18,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -43,8 +29,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/company/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/ComputerMouse.java" />
       </list>
     </option>
   </component>
@@ -73,8 +60,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,6 +123,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -273,18 +261,29 @@
     <history-entry file="AppTest - 2019.06.05 at 23h 07m 20s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_testComputerMouse - 2019.06.06 at 12h 22m 28s.xml">
+      <configuration name="AppTest.testComputerMouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testComputerMouse - 2019.06.06 at 12h 24m 59s.xml">
+      <configuration name="AppTest.testComputerMouse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.06 at 12h 25m 40s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.06.06 at 12h 30m 26s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="20" width="1400" height="784" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26567164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3297546" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297546" />
@@ -295,6 +294,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3297546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -340,31 +340,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ComputerMouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="61">
+          <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/TV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="102">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ComputerMouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-376">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
