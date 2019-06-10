@@ -1,0 +1,33 @@
+Concrete(Inheritance) Approach Vs. Interface Approach Vs. Abstract Approach
+
+Concrete (Inheritance) Approach:
+
+This approach is appropriate when derived classes want to use only a certain feature of the base class and wants a different implementation.
+
+I believe concrete approach is the best of the three approaches. Reasons:
+
+a) It gives lots of flexibility by letting the derived classes choose what they want to implement from the base class.
+b) It also lets the derived classes to override the methods described in the base class.
+C) In real world applications, this would translate into more re-usability.
+
+Interface Approach:
+
+Interface is a contract. A class that is implementing the interface must implement all the methods of the interface. The methods in interface only
+contain signature and no body.
+
+a) This approach is useful when setting the rules/minimum requirements for the objects.
+b) This approach allows the derived classes their own implementation of the methods.
+c) While this approach is not as flexible as the concrete approach, it is still useful for establishing some rules and requirements.
+Java 8 allows body in interface.
+
+Abstract Approach:
+
+Abstract approach can not be instantiated on its own. The methods in abstract classes should have 'abstract' in their modifier.
+The methods in interface only contain signature and no body. It can only be instantiated through the derived classes only.
+
+a) Compared to the other two methods, this is used less often. Classes using abstract should implement all the abstract methods.
+
+
+
+
+

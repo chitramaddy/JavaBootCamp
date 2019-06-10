@@ -1,0 +1,28 @@
+package com.company.abstractapproach;
+
+public class Circle extends Shape {
+
+    private double radius;
+
+    public Circle(double radius) {
+        super("life", "yellow");
+        this.radius = radius;
+        this.name = super.getName();
+    }
+
+    public double area() {
+        return radius * radius * Math.PI;
+    }
+
+    public double perimeter() {
+        return 2 * Math.PI * radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+}
