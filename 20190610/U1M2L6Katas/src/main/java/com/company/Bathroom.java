@@ -1,13 +1,13 @@
 package com.company;
 
-public class Bathroom extends Home {
+public class Bathroom{
 
     private String sink;
     private String bathtub;
     private String fixtures;
 
     public Bathroom(String sink, String bathtub, String fixtures) {
-        super(3.5, 6.5);
+
         this.sink = sink;
         this.fixtures = fixtures;
         this.bathtub = bathtub;

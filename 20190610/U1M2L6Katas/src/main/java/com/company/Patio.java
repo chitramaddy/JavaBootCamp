@@ -1,15 +1,12 @@
 package com.company;
 
-public class Patio extends Home {
+public class Patio {
 
-    private double patioArea;
-    public Patio(){
-        super(8, 7.5);
+    private String color;
+    public Patio(String color){
+        this.color = color;
 
     }
 
-    public double calcArea(){
-        patioArea = super.calcSqft(8, 7.5);
-        return patioArea;
-    }
+
 }

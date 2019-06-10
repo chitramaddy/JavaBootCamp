@@ -1,21 +1,17 @@
 package com.company;
 
-public class Basement extends Home{
+public class Basement{
 
     private String flooring;
     private String color;
     private double area;
 
     public Basement(){
-        super(12, 15);
         this.flooring = flooring;
         this.color = color;
     }
 
-    public double calcArea(){
-       area  = super.calcSqft(12,15);
-        return area;
-    }
+
     public String getFlooring() {
         return flooring;
     }

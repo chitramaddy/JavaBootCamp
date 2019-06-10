@@ -1,6 +1,6 @@
 package com.company;
 
-public class Kitchen extends Home {
+public class Kitchen {
 
     private String flooring;
     private String color;
@@ -8,7 +8,6 @@ public class Kitchen extends Home {
     private double costOfPainting;
 
     public Kitchen(String flooring, String color){
-        super(10, 12);
         this.flooring = flooring;
         this.color = color;
     }
