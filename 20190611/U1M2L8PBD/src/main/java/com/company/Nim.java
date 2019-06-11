@@ -19,6 +19,10 @@ public class Nim {
         int remove = 0;
         boolean canRemove = false;
 
+        //Total number of sticks available.
+         int total = 15;
+
+
         String[] playerArray = new String[2];
 
         System.out.println("Player 1: Enter your name: ");
@@ -31,6 +35,8 @@ public class Nim {
 
         boolean isEmpty = false;
 
+        String loser = playerArray[0];
+
         while (isEmpty == false) {
 
             for (int i = 0; i < playerArray.length; i++) {
@@ -42,6 +48,7 @@ public class Nim {
                 System.out.println("How many to remove from pile: " + pileChoice);
                 remove = Integer.parseInt(scan.nextLine());
 
+                //This is to check if the user picked pile has enough sticks to remove and user did not pick zero sticks to remove.
                 while (canRemove == false) {
                     while(remove == 0) {
                         System.out.println("Nice try." + playerArray[i] + "You must choose at least 1. How many?");
@@ -55,6 +62,12 @@ public class Nim {
                             }
                             canRemove = true;
                             sticksArray[j] -= remove;
+
+                            if( sticksArray[0]+sticksArray[1]+sticksArray[2] == total){
+                                isEmpty = true;
+                                System.out.println(playerArray[i]+ "You lose." + playerArray[playerArray.length-(i-1)] + "wins. \n");
+
+                            }
 
                             System.out.println("A: " + sticksArray[0] + "\t B: " + sticksArray[1] + "\t C: " + sticksArray[2]);
 
