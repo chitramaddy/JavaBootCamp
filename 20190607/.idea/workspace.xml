@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78f90e2f-cef9-4794-ad4b-324a31c26374" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../20190605/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190605/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20190606/U1M2L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190606/U1M2L3Katas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20190606/U1M2L3Katas/src/test/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../20190606/U1M2L3Katas/src/test/java/com/company/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20190606/U1M2L3Katas/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../20190606/U1M2L3Katas/target/classes/com/company/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20190606/U1M2L3Katas/target/classes/com/company/ComputerMouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../20190606/U1M2L3Katas/target/classes/com/company/ComputerMouse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20190606/U1M2L3Katas/target/test-classes/com/company/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../20190606/U1M2L3Katas/target/test-classes/com/company/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20190610/U1M2L6Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190610/U1M2L6Katas/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +28,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,6 +95,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,7 +131,7 @@
   <component name="ToolWindowManager">
     <frame x="68" y="20" width="1400" height="784" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
