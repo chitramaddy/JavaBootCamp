@@ -56,22 +56,27 @@ public class Nim {
                     }
                     for (int j = 0; j < pileNames.length; j++) {
                         if(pileChoice.equals(pileNames[j])) {
-                            while (sticksArray[j] - remove < 0) {
+                            while (sticksArray[j]  - remove > 0) {
                                 System.out.println("Pile " + pileNames[j] + " does not have that many. Choose again");
                                 remove = Integer.parseInt(scan.nextLine());
                             }
                             canRemove = true;
                             sticksArray[j] -= remove;
 
-                            if( sticksArray[0]+sticksArray[1]+sticksArray[2] == total){
+                            if( (sticksArray[0]+sticksArray[1]+sticksArray[2]) == total){
                                 isEmpty = true;
                                 System.out.println(playerArray[i]+ "You lose." + playerArray[playerArray.length-(i-1)] + "wins. \n");
 
+                            }else{
+                                System.out.println("The end debugger1");
                             }
 
                             System.out.println("A: " + sticksArray[0] + "\t B: " + sticksArray[1] + "\t C: " + sticksArray[2]);
 
-                        }
+                        }else{
+                            System.out.println("The end debugger2");
+
+                    }
                     }
                 }
 
