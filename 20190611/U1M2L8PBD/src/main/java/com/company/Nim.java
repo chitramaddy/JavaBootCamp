@@ -1,5 +1,6 @@
 package com.company;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Nim {
@@ -17,10 +18,9 @@ public class Nim {
 
         //to remove the sticks as per user input
         int remove = 0;
-        boolean canRemove = false;
 
         //Total number of sticks available.
-         int total = 15;
+        int total = 15;
 
 
         String[] playerArray = new String[2];
@@ -33,57 +33,33 @@ public class Nim {
 
         System.out.println("A: " + sticksArray[0] + "\t B: " + sticksArray[1] + "\t C: " + sticksArray[2]);
 
-        boolean isEmpty = false;
+        boolean isPlaying = true;
 
-        String loser = playerArray[0];
+        String lastPlayer = playerArray[0];
 
-        while (isEmpty == false) {
+        while (isPlaying) {
 
             for (int i = 0; i < playerArray.length; i++) {
-
-
                 System.out.println(playerArray[i] + " Choose a pile: ");
                 pileChoice = scan.nextLine();
 
                 System.out.println("How many to remove from pile: " + pileChoice);
                 remove = Integer.parseInt(scan.nextLine());
 
-                //This is to check if the user picked pile has enough sticks to remove and user did not pick zero sticks to remove.
-                while (canRemove == false) {
-                    while(remove == 0) {
-                        System.out.println("Nice try." + playerArray[i] + "You must choose at least 1. How many?");
-                        remove = Integer.parseInt(scan.nextLine());
-                    }
-                    for (int j = 0; j < pileNames.length; j++) {
-                        if(pileChoice.equals(pileNames[j])) {
-                            while (sticksArray[j]  - remove > 0) {
-                                System.out.println("Pile " + pileNames[j] + " does not have that many. Choose again");
-                                remove = Integer.parseInt(scan.nextLine());
-                            }
-                            canRemove = true;
-                            sticksArray[j] -= remove;
+                for (int j = 0; j < pileNames.length; j++) {
+                    if (pileChoice.equals(pileNames[j])) {
+                        sticksArray[j] -= remove;
+                        total -= remove;
 
-                            if( (sticksArray[0]+sticksArray[1]+sticksArray[2]) == total){
-                                isEmpty = true;
-                                System.out.println(playerArray[i]+ "You lose." + playerArray[playerArray.length-(i-1)] + "wins. \n");
-
-                            }else{
-                                System.out.println("The end debugger1");
-                            }
-
-                            System.out.println("A: " + sticksArray[0] + "\t B: " + sticksArray[1] + "\t C: " + sticksArray[2]);
-
-                        }else{
-                            System.out.println("The end debugger2");
-
-                    }
                     }
                 }
-
+                System.out.println("A: " + sticksArray[0] + "\t B: " + sticksArray[1] + "\t C: " + sticksArray[2]);
 
             }
+            if (total == 0) {
+                System.out.println(playerArray[0]+ " you lose. " + playerArray[1] +" is the winner.");
+                isPlaying = false;
 
-
+            }
         }
-    }
-}
+    }}
