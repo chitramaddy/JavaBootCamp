@@ -1,0 +1,49 @@
+ Why is it important to have a good understanding of the underlying business when creating a data model?
+
+We need to understand the business 
+
+- to find out the nouns of the business
+
+- to understand the specific needs of the business
+
+-to decide the entities and attributes
+
+================================
+
+Compare and contrast data and metadata.
+
+MetaData - This is the data about the information. This can be table name, column names, any restrictions on the column etc. This could be anything that tells more about the table and column.
+
+Data is the information(ie actual values).
+
+==================================
+
+ What is the difference between an entity and an attribute?
+
+Entity is the table. 
+
+An entity is made up of attributes ie columns.
+
+====================================== 
+
+What is a primary key?
+
+Primary key is a column or a group of columns that is used as a unique identifier of a table.
+
+=======================================
+
+What is a foriegn key?
+
+In relational databases where two tables have a relatioship, the primary key of one table is referred as the foriegn key for the other table. This is used to establish the relationship between both tables.
+
+=======================================
+
+What is the purpose of relationships in a relational database?
+
+Relationships in a relational database, help preventing redundant data. By having relationships between tables we can also expose/hide data as required. 
+
+========================================
+
+What does a row represent in a relational database?
+
+A row represent the values for the columns of the table in the database.

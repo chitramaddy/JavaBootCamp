@@ -7,8 +7,10 @@ public class Application {
 
     public static void main(String[] args) {
 
+
         int petIndex = 0;
 
+        //To check if the petIndex entered by the user is a valid entry ie within the Array index limits.
         do {
             try {
                 petIndex = Pets.choosePet();

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f88e2d7e-9fff-41e8-8c37-f925fcb659b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../20190611/U1M2L8PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190611/U1M2L8PBD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190611/U1M2L8PBD/src/main/java/com/company/Nim.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190611/U1M2L8PBD/src/main/java/com/company/Nim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190611/U1M2L8PBD/target/classes/com/company/Nim.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190611/U1M2L8PBD/target/classes/com/company/Nim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/src/main/java/com/company/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/src/main/java/com/company/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/target/classes/com/company/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/target/classes/com/company/Application.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,7 +18,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,8 +62,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,13 +95,33 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1M3L2Katas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1M3L2Katas" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -119,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CarLists">
+  <component name="RunManager" selected="Application.IterateAndPrint">
     <configuration name="CarLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.CarLists" />
       <module name="U1M3L2Katas" />
@@ -161,8 +179,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CarLists" />
         <item itemvalue="Application.IterateAndPrint" />
+        <item itemvalue="Application.CarLists" />
         <item itemvalue="Application.MapFun" />
       </list>
     </recent_temporary>
@@ -183,7 +201,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -219,27 +237,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CarLists.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/MapFun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="185">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/IterateAndPrint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="46" column="86" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
+        <state relative-caret-position="-5">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/MapFun.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CarLists.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="52">
+          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
         </state>
       </provider>
     </entry>
