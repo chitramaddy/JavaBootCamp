@@ -29,12 +29,17 @@ An entity is made up of attributes ie columns.
 What is a primary key?
 
 Primary key is a column or a group of columns that is used as a unique identifier of a table.
+In order for a table to qualify as a relational table, it must have primary key. To qualify as a primary key:
+
+- The value in the column should be unique. No two rows can have the same value a their primary key.
+
+- Primary eky cannot be null.
 
 =======================================
 
 What is a foriegn key?
 
-In relational databases where two tables have a relatioship, the primary key of one table is referred as the foriegn key for the other table. This is used to establish the relationship between both tables.
+In relational databases where two tables have a relatioship, the primary key of one table is referred as the foriegn key for the other table. This is used to link the tables and establish the relationship between both tables.
 
 =======================================
 
