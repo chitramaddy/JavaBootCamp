@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: U1-M4-Summative-Madhan-Chitra
+  description: Random quote, random word and a magic 8 ball.
+
+servers:
+  - url: http://localhost:8080
+    description: Local dev server
+
+paths:
+  /quote:
+    get:
+      summary: Show a random quote
+
+      responses:
+        #Successful response
+        "201":
+          description: A random quote
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/quotes"
+    #Get a word of the day and definition
+  /word:
+    get:
+      responses:
+        "200":
+          description: A random word and definition
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/words"
+
+  # Ask a question, get a magic 8 ball answer
+  /magic:
+    post:
+      summary: Ask a question, get a magic-8 ball answer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Magic8"
+
+      responses:
+        #Successful response
+        "201":
+          description: a magic-8 ball answer for your question
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Magic8"
+
+components:
+  schemas:
+    quotes:
+      properties:
+        author:
+          type: string
+        quote:
+          type: string
+      required:
+        - author
+        - quote
+
+    words:
+      properties:
+        word:
+          type: string
+        definition:
+          type: string
+      required:
+        - word of the day
+        - definition
+
+    Magic8:
+      properties:
+        question:
+          type: string
+        answer:
+          type: string
+      required:
+        - question
+        - answer
