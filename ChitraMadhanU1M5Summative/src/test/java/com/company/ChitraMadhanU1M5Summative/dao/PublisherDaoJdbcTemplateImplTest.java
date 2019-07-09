@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
@@ -15,32 +16,34 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest
 public class PublisherDaoJdbcTemplateImplTest {
 
     @Autowired
-    private AuthorDao authorDao;
+    protected AuthorDao authorDao;
 
     @Autowired
-    private BookDao bookDao;
+    protected BookDao bookDao;
 
     @Autowired
-    private PublisherDao publisherDao;
+    protected PublisherDao publisherDao;
 
     @Before
     public void setUp() throws Exception{
 
         // clean out the test db
-        List<Author> authorList = authorDao.getAllAuthors();
-
-        authorList.stream()
-                .forEach(author ->
-                        authorDao.deleteAuthor(author.getAuthorId()));
 
         List<Book> bookList = bookDao.getAllBooks();
 
         bookList.stream()
                 .forEach(book ->
                         bookDao.deleteBook(book.getAuthorId()));
+
+        List<Author> authorList = authorDao.getAllAuthors();
+
+        authorList.stream()
+                .forEach(author ->
+                        authorDao.deleteAuthor(author.getAuthorId()));
 
         List<Publisher> publisherList = publisherDao.getAllPublishers();
 
