@@ -39,7 +39,7 @@ public class BookDaoJdbcTemplateImplTest {
 
         bookList.stream()
                 .forEach(book ->
-                        bookDao.deleteBook(book.getAuthorId()));
+                        bookDao.deleteBook(book.getBookId()));
 
         List<Author> authorList = authorDao.getAllAuthors();
 
