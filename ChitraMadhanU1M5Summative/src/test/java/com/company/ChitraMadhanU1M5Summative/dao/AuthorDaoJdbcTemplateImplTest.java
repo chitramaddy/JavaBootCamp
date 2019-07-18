@@ -8,6 +8,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
@@ -15,38 +17,41 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest
 public class AuthorDaoJdbcTemplateImplTest {
 
     @Autowired
-    private AuthorDao authorDao;
+    protected AuthorDao authorDao;
 
     @Autowired
-    private BookDao bookDao;
+    protected BookDao bookDao;
 
     @Autowired
-    private PublisherDao publisheDao;
+    protected PublisherDao publisherDao;
 
     @Before
     public void setUp() throws Exception{
 
         // clean out the test db
+
+        List<Book> bookList = bookDao.getAllBooks();
+
+        bookList.stream()
+                .forEach(book ->
+                        bookDao.deleteBook(book.getBookId()));
+
         List<Author> authorList = authorDao.getAllAuthors();
 
         authorList.stream()
                 .forEach(author ->
                         authorDao.deleteAuthor(author.getAuthorId()));
 
-        List<Book> bookList = bookDao.getAllBooks();
-
-        bookList.stream()
-                .forEach(book ->
-                        bookDao.deleteBook(book.getAuthorId()));
-
-        List<Publisher> publisherList = publisheDao.getAllPublishers();
+        List<Publisher> publisherList = publisherDao.getAllPublishers();
 
         publisherList.stream()
                 .forEach(publisher ->
-                        publisheDao.deletePublisher(publisher.getPublisherId()));
+                        publisherDao.deletePublisher(publisher.getPublisherId()));
+
 
     }
 
@@ -79,6 +84,42 @@ public class AuthorDaoJdbcTemplateImplTest {
 
         author1 = authorDao.getAuthorById(author.getAuthorId());
         assertNull(author1);
+    }
+
+    @Test(expected  = DataIntegrityViolationException.class)
+    public void addWithRefIntegrityException() {
+
+        Author author = new Author();
+        author.setFirstName("Khaled");
+        author.setLastName("Hosseini");
+        author.setStreet("4848 San Felipe Road, #150-221");
+        author.setCity("San Jose");
+        author.setState("CA");
+        author.setPostalCode("95135");
+        author.setPhone("408-904-7175");
+        author.setEmail("info@khaledhosseinifoundation.org");
+
+        author = authorDao.addAuthor(author);
+
+    }
+
+    @Test(expected  = DataIntegrityViolationException.class)
+    public void deleteWithRefIntegrityException() {
+
+        Author author = new Author();
+        author.setFirstName("Khaled");
+        author.setLastName("Hosseini");
+        author.setStreet("4848 San Felipe Road, #150-221");
+        author.setCity("San Jose");
+        author.setState("CA");
+        author.setPostalCode("95135");
+        author.setPhone("408-904-7175");
+        author.setEmail("info@khaledhosseinifoundation.org");
+
+        author = authorDao.addAuthor(author);
+
+        authorDao.deleteAuthor(author.getAuthorId());
+
     }
 
 
