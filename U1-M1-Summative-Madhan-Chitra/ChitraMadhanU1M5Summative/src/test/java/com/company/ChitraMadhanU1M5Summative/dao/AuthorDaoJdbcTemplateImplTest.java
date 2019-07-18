@@ -86,6 +86,42 @@ public class AuthorDaoJdbcTemplateImplTest {
         assertNull(author1);
     }
 
+    @Test(expected  = DataIntegrityViolationException.class)
+    public void addWithRefIntegrityException() {
+
+        Author author = new Author();
+        author.setFirstName("Khaled");
+        author.setLastName("Hosseini");
+        author.setStreet("4848 San Felipe Road, #150-221");
+        author.setCity("San Jose");
+        author.setState("CA");
+        author.setPostalCode("95135");
+        author.setPhone("408-904-7175");
+        author.setEmail("info@khaledhosseinifoundation.org");
+
+        author = authorDao.addAuthor(author);
+
+    }
+
+    @Test(expected  = DataIntegrityViolationException.class)
+    public void deleteWithRefIntegrityException() {
+
+        Author author = new Author();
+        author.setFirstName("Khaled");
+        author.setLastName("Hosseini");
+        author.setStreet("4848 San Felipe Road, #150-221");
+        author.setCity("San Jose");
+        author.setState("CA");
+        author.setPostalCode("95135");
+        author.setPhone("408-904-7175");
+        author.setEmail("info@khaledhosseinifoundation.org");
+
+        author = authorDao.addAuthor(author);
+
+        authorDao.deleteAuthor(author.getAuthorId());
+
+    }
+
 
     @Test
     public void getAllAuhtors() {
@@ -139,8 +175,8 @@ public class AuthorDaoJdbcTemplateImplTest {
 
         author = authorDao.getAuthorById(author.getAuthorId());
 
-              author.setPhone("111-222-3333");
-        author.setEmail("contact@khaledhnifoundation.org");
+        author.setPhone("111-222-3333");
+        author.setEmail("contact@khaledhosseinifoundation.org");
 
         authorDao.updateAuthor(author);
 
