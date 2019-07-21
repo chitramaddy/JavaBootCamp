@@ -24,55 +24,56 @@ public class GameController {
         return gameStoreService.saveGame(gameViewModel);
     }
 
-    @GetMapping("/{gameId}")
+    @GetMapping("/game/{gameId}")
     @ResponseStatus(HttpStatus.OK)
-    public GameViewModel getGame(@PathVariable("id") int gameId) {
+    public GameViewModel getGame(@PathVariable("gameId") int gameId) {
         GameViewModel gameViewModel = gameStoreService.findGame(gameId);
         if (gameViewModel == null)
             throw new NotFoundException("Game could not be retrieved for id " + gameId);
         return gameViewModel;
     }
 
-    @DeleteMapping("/{gameId}")//Another way to set the Rest API Delete mapping
+    @DeleteMapping("/game/{gameId}")//Another way to set the Rest API Delete mapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteGame(@PathVariable("gameId") int gameId) {
-        gameStoreService.removeConsole(gameId);
+        gameStoreService.removeGame(gameId);
     }
 
-    @PutMapping("/{gameId}")//Another way to set the Rest API Put mapping
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateGame(@PathVariable("gameId") int gameId, @RequestBody @Valid GameViewModel gameViewModel) {
+    @PutMapping("/game/{gameId}")//Another way to set the Rest API Put mapping
+    @ResponseStatus(HttpStatus.OK)
+    public GameViewModel updateGame(@PathVariable("gameId") int gameId, @RequestBody @Valid GameViewModel gameViewModel) {
         if (gameViewModel.getGameId() == 0)
             gameViewModel.setGameId(gameId);
         if (gameId != gameViewModel.getGameId()) {
             throw new IllegalArgumentException("Game ID on path must match the ID in the Game object");
         }
-        gameStoreService.updateGame(gameViewModel);
+        gameViewModel= gameStoreService.updateGame(gameViewModel);
+        return gameViewModel;
     }
 
-    @GetMapping("/{esrb}")
+    @GetMapping("/esrb/{esrb}")
     @ResponseStatus(HttpStatus.OK)
     public List<GameViewModel> getGameWithEsrb(@PathVariable("esrb") String esrb) {
         List<GameViewModel> gameViewModel = gameStoreService.findGameByEsrbRating(esrb);
-        if (gameViewModel == null)
+        if (gameViewModel.size() == 0)
             throw new NotFoundException("No games available with " + esrb + " rating.");
         return gameViewModel;
     }
 
-    @GetMapping("/{studio}")
+    @GetMapping("/studio/{studio}")
     @ResponseStatus(HttpStatus.OK)
     public List<GameViewModel> getGameByStudio(@PathVariable("studio") String studio) {
         List<GameViewModel> gameViewModel = gameStoreService.findGameByStudio(studio);
-        if (gameViewModel == null)
+        if (gameViewModel.size() == 0)
             throw new NotFoundException("No games found for: " + studio + ".");
         return gameViewModel;
     }
 
-    @GetMapping("/{title}")
+    @GetMapping("/title/{title}")
     @ResponseStatus(HttpStatus.OK)
     public List<GameViewModel> getGameWithTitle(@PathVariable("title") String title) {
         List<GameViewModel> gameViewModel = gameStoreService.findGameByTitle(title);
-        if (gameViewModel == null)
+        if (gameViewModel.size() == 0)
             throw new NotFoundException("No games found for: " + title + ".");
         return gameViewModel;
     }

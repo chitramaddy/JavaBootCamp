@@ -24,7 +24,7 @@ public class ConsoleController {
         return gameStoreService.saveConsole(consoleViewModel);
     }
 
-    @GetMapping("/{gameId}")
+    @GetMapping("console/{gameId}")
     @ResponseStatus(HttpStatus.OK)
     public ConsoleViewModel getConsole(@PathVariable("gameId") int gameId) {
         ConsoleViewModel consoleViewModel = gameStoreService.findConsole(gameId);
@@ -33,28 +33,29 @@ public class ConsoleController {
         return consoleViewModel;
     }
 
-    @DeleteMapping("/{gameId}")//Another way to set the Rest API Delete mapping
+    @DeleteMapping("console/{gameId}")//Another way to set the Rest API Delete mapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteConsole(@PathVariable("gameId") int gameId) {
         gameStoreService.removeConsole(gameId);
     }
 
-    @PutMapping("/{gameId}")//Another way to set the Rest API Put mapping
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateConsole(@PathVariable("gameId") int gameId, @RequestBody @Valid ConsoleViewModel consoleViewModel) {
+    @PutMapping("console/{gameId}")//Another way to set the Rest API Put mapping
+    @ResponseStatus(HttpStatus.OK)
+    public ConsoleViewModel updateConsole(@PathVariable("gameId") int gameId, @RequestBody @Valid ConsoleViewModel consoleViewModel) {
         if (consoleViewModel.getGameId() == 0)
             consoleViewModel.setGameId(gameId);
         if (gameId != consoleViewModel.getGameId()) {
             throw new IllegalArgumentException("Console ID on path must match the ID in the Console object");
         }
-        gameStoreService.updateConsole(consoleViewModel);
+        consoleViewModel = gameStoreService.updateConsole(consoleViewModel);
+        return consoleViewModel;
     }
 
     @GetMapping("/{manufacturer}")
     @ResponseStatus(HttpStatus.OK)
     public List<ConsoleViewModel> getConsoleByManufacturer(@PathVariable("manufacturer") String manufacturer) {
         List<ConsoleViewModel> consoleViewModel = gameStoreService.findConsoleByManufacturer(manufacturer);
-        if (consoleViewModel == null)
+        if (consoleViewModel.size() == 0)
             throw new NotFoundException("No console found by " + manufacturer);
         return consoleViewModel;
     }

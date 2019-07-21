@@ -5,6 +5,7 @@ import com.company.ChitraMadhanU1Capstone.dto.TShirt;
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -20,7 +21,7 @@ public class TShirtViewModel {
     @DecimalMin(value = "0.0", inclusive = true)
     @DecimalMax(value = "999999.99", inclusive = true)
     private BigDecimal price;
-    @NotEmpty(message="Please supply a value for quantity")
+    @NotNull(message="Please supply a value for quantity")
     private int quantity;
 
     public int gettShirtId() {

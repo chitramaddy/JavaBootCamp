@@ -35,8 +35,8 @@ public class GameDaoJdbcTemplateImpl implements GameDao{
     private static final String SELECT_GAME_BY_STUDIO =
             "select * from game where studio = ?";
 
-    String SELECT_GAME_BY_TITLE =
-            "select * from game where title = ?";
+    private static final String SELECT_GAME_BY_TITLE =
+            "select * from game where title like ?";
 
     private static final String SELECT_GAME_BY_ESRB =
             "select * from game where esrb_rating = ?";
@@ -116,7 +116,7 @@ public class GameDaoJdbcTemplateImpl implements GameDao{
     @Override
     public List<Game> getGamesByTitle(String title) {
 
-        return jdbcTemplate.query(SELECT_GAME_BY_TITLE, this::mapRowToGame, title);
+        return jdbcTemplate.query(SELECT_GAME_BY_TITLE, this::mapRowToGame,"%"+title+"%");
 
     }
 

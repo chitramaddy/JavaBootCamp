@@ -16,7 +16,7 @@ public class ProcessingFeeDaoJdbcTemplateImpl implements ProcessingFeeDao{
     private JdbcTemplate jdbcTemplate;
 
     private static final String SELECT_PROCESSING_FEE =
-            "select * from Processing_Fee where product_type = ?";
+            "select * from processing_fee where product_type = ?";
 
     @Autowired
     public ProcessingFeeDaoJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {
@@ -27,7 +27,8 @@ public class ProcessingFeeDaoJdbcTemplateImpl implements ProcessingFeeDao{
     public ProcessingFee getProcessingFee(String productType) {
 
         try{
-            return jdbcTemplate.queryForObject(SELECT_PROCESSING_FEE, this::mapToRowProcessingFee, productType);
+            ProcessingFee processingFee = jdbcTemplate.queryForObject(SELECT_PROCESSING_FEE, this::mapToRowProcessingFee, productType);
+            return processingFee;
         }catch (EmptyResultDataAccessException e){
             return null;
         }
@@ -38,7 +39,6 @@ public class ProcessingFeeDaoJdbcTemplateImpl implements ProcessingFeeDao{
         ProcessingFee pf = new ProcessingFee();
         pf.setProductType(rs.getString("product_type"));
         pf.setFee(rs.getBigDecimal("fee"));
-
         return pf;
     }
 

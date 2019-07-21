@@ -242,13 +242,13 @@ public class GameStoreService {
 
     //Invoice view model methods
 
-    public InvoiceViewModel saveInvoice(InvoiceViewModel invoiceViewModel) {
+    public InvoiceViewModel saveInvoice(InvoiceViewModel invoiceViewModel) throws InputValidationException{
 
-//        String errors = inputValidation(invoiceViewModel);
-//
-//        if(errors != ""){
-//            throw new InputValidationException();
-//        }
+        String errors = inputValidation(invoiceViewModel);
+
+        if(!errors.equals("none")){
+            throw new InputValidationException(errors);
+        }
 
 
         Invoice invoice = new Invoice();
@@ -287,7 +287,7 @@ public class GameStoreService {
 
         invoice = invoiceDao.addInvoice(invoice);
 
-
+        calculateStock(invoice, invoice.getItemId());
 
         return buildInvoiceViewModel(invoice);
     }
@@ -387,8 +387,8 @@ public class GameStoreService {
             case "games":
                 return true;
 
-            case "tshirt":
-            case "tshirts":
+            case "t_shirt":
+            case "t_shirts":
                 return true;
 
             case "console":
@@ -415,8 +415,8 @@ public class GameStoreService {
                 else unitPrice = game.getPrice();
                 break;
 
-            case "tshirt":
-            case "tshirts":
+            case "t_shirt":
+            case "t_shirts":
                 TShirt tShirt = tShirtDao.getTShirt(itemId);
                 if (tShirt == null) return null;
                 else unitPrice = tShirt.getPrice();
@@ -437,11 +437,16 @@ public class GameStoreService {
 
     private BigDecimal findProcessingFee(int quantity, String productType) {
         ProcessingFee processingFee = processingFeeDao.getProcessingFee(productType);
-        BigDecimal fee = processingFee.getFee().setScale(2, RoundingMode.HALF_UP);
-        if (quantity > 10) {
-            fee = fee.add(new BigDecimal("15.49"));
+
+        if (processingFee == null) {
+            return null;
+        } else {
+            BigDecimal fee = processingFee.getFee().setScale(2, RoundingMode.HALF_UP);
+            if (quantity > 10) {
+                fee = fee.add(new BigDecimal("15.49").setScale(2, RoundingMode.HALF_UP));
+            }
+            return fee;
         }
-        return fee;
     }
 
     private Integer checkAvailability(int itemId, String productType) {
@@ -481,6 +486,7 @@ public class GameStoreService {
 
         int orderQuantity = invoice.getQuantity();
         int stock = checkAvailability(invoice.getItemId(), invoice.getItemType());
+
         stock = stock-orderQuantity;
         updateInventory(invoice.getItemType(), invoice.getItemId(), stock);
     }
@@ -514,22 +520,21 @@ public class GameStoreService {
     }
 
     public String inputValidation(InvoiceViewModel invoiceViewModel) throws InputValidationException{
-        String error = "";
+        String error = "none";
 
         Boolean checkState = validStateCode(invoiceViewModel.getState());
         Boolean itemValid = isItemValid(invoiceViewModel.getItemType());
         int stockInHand = checkAvailability(invoiceViewModel.getItemId(), invoiceViewModel.getItemType());
 
-        if (!checkState) {
-            error += "Invalid state code.";
+        if (checkState == false) {
+            error = "Invalid state code.";
         } else if (!itemValid) {
-            error += "Invalid product type.";
+            error = "Invalid product type.";
         } else if (invoiceViewModel.getQuantity() > stockInHand) {
-            error += "Insufficient stock.";
+            error = "Insufficient stock.";
         }
         return error;
     }
-
 
 }
 

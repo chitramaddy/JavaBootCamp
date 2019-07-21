@@ -81,10 +81,10 @@ import java.util.List;
 
     @ExceptionHandler(value = {InputValidationException.class})
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public ResponseEntity<VndErrors> inputValidationException(InputValidationException e, WebRequest request) {
-        VndErrors error = new VndErrors(request.toString(), "Not found : " + e.getMessage());
+    public VndErrors inputValidationException(InputValidationException e, WebRequest request) {
+        VndErrors error = new VndErrors(request.toString(), "Cannot process order."+e.getMessage());
         ResponseEntity<VndErrors> responseEntity = new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
-        return responseEntity;
+        return error;
     }
 
     }

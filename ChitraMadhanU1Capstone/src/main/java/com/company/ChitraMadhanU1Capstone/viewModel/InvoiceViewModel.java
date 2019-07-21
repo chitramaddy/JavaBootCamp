@@ -1,6 +1,7 @@
 package com.company.ChitraMadhanU1Capstone.viewModel;
 
 import com.company.ChitraMadhanU1Capstone.dto.Invoice;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.constraints.*;
 import java.math.BigDecimal;
@@ -21,11 +22,12 @@ public class InvoiceViewModel {
     private String zipCode;
     @NotEmpty(message="Please supply a value for item type")
     private String itemType;
-    @NotEmpty(message="Please supply a value for item id")
+    @NotNull(message="Please supply a value for item id")
     private int itemId;
     @DecimalMin(value = "0.0", inclusive = true)
     @DecimalMax(value = "999999.99", inclusive = true)
     private BigDecimal unitPrice;
+    @NotNull
     @Min(value = 1)
     private int quantity;
     private BigDecimal subTotal;

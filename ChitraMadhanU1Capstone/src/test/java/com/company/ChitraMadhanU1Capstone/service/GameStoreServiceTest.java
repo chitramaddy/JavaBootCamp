@@ -2,6 +2,7 @@ package com.company.ChitraMadhanU1Capstone.service;
 
 import com.company.ChitraMadhanU1Capstone.dao.*;
 import com.company.ChitraMadhanU1Capstone.dto.*;
+import com.company.ChitraMadhanU1Capstone.exception.InputValidationException;
 import com.company.ChitraMadhanU1Capstone.viewModel.ConsoleViewModel;
 import com.company.ChitraMadhanU1Capstone.viewModel.GameViewModel;
 import com.company.ChitraMadhanU1Capstone.viewModel.InvoiceViewModel;
@@ -362,7 +363,7 @@ public class GameStoreServiceTest {
     }
 
     @Test
-    public void findSaveInvoice(){
+    public void findSaveInvoice() throws InputValidationException {
         InvoiceViewModel invoice = new InvoiceViewModel();
 
         invoice.setName("Chitra");

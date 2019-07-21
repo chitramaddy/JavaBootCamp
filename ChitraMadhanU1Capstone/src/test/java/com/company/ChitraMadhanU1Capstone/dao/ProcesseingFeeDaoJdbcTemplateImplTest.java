@@ -27,7 +27,7 @@ public class ProcesseingFeeDaoJdbcTemplateImplTest {
 
         ProcessingFee processingFee = new ProcessingFee();
 
-        processingFee = processingFeeDao.getProcessingFee("consoles");
+        processingFee = processingFeeDao.getProcessingFee("t_shirts");
 
         ProcessingFee processingFee1 = processingFeeDao.getProcessingFee(processingFee.getProductType());
 

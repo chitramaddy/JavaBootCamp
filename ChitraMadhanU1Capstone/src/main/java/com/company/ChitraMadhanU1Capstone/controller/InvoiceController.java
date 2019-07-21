@@ -1,5 +1,6 @@
 package com.company.ChitraMadhanU1Capstone.controller;
 
+import com.company.ChitraMadhanU1Capstone.exception.InputValidationException;
 import com.company.ChitraMadhanU1Capstone.exception.NotFoundException;
 import com.company.ChitraMadhanU1Capstone.service.GameStoreService;
 import com.company.ChitraMadhanU1Capstone.viewModel.InvoiceViewModel;
@@ -18,8 +19,12 @@ public class InvoiceController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public InvoiceViewModel addInvoice(@RequestBody @Valid InvoiceViewModel invoiceViewModel) {
-        return gameStoreService.saveInvoice(invoiceViewModel);
+    public InvoiceViewModel addInvoice(@RequestBody @Valid InvoiceViewModel invoiceViewModel) throws InputValidationException {
+        invoiceViewModel = gameStoreService.saveInvoice(invoiceViewModel);
+
+        if (invoiceViewModel == null)
+            throw new InputValidationException("Invoice could not be created.");
+        return invoiceViewModel;
     }
 
     @GetMapping("/invoice/{invoiceId}")

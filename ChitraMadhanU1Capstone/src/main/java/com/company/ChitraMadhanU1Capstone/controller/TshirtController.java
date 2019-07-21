@@ -24,7 +24,7 @@ public class TshirtController {
         return gameStoreService.saveTshirt(tShirtViewModel);
     }
 
-    @GetMapping("/{tshirtId}")
+    @GetMapping("/tshirt/{tshirtId}")
     @ResponseStatus(HttpStatus.OK)
     public TShirtViewModel getTshirt(@PathVariable("tshirtId") int tshirtId) {
         TShirtViewModel tShirtViewModel = gameStoreService.findTshirt(tshirtId);
@@ -33,38 +33,38 @@ public class TshirtController {
         return tShirtViewModel;
     }
 
-    @DeleteMapping("/{tshirtId}")//Another way to set the Rest API Delete mapping
+    @DeleteMapping("/tshirt/{tshirtId}")//Another way to set the Rest API Delete mapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteTshirt(@PathVariable("tshirtId") int tshirtId) {
         gameStoreService.removeTShirt(tshirtId);
     }
 
-    @PutMapping("/{tshirtId}")//Another way to set the Rest API Put mapping
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateTShirt(@PathVariable("tshirtId") int tshirtId, @RequestBody @Valid TShirtViewModel tShirtViewModel) {
+    @PutMapping("/tshirt/{tshirtId}")//Another way to set the Rest API Put mapping
+    @ResponseStatus(HttpStatus.OK)
+    public TShirtViewModel updateTShirt(@PathVariable("tshirtId") int tshirtId, @RequestBody @Valid TShirtViewModel tShirtViewModel) {
         if (tShirtViewModel.gettShirtId() == 0)
             tShirtViewModel.settShirtId(tshirtId);
         if (tshirtId != tShirtViewModel.gettShirtId()) {
             throw new IllegalArgumentException("T-Shirt ID on path must match the ID in the T-Shirt object");
         }
-        gameStoreService.updateTshirt(tShirtViewModel);
+        return gameStoreService.updateTshirt(tShirtViewModel);
     }
 
-    @GetMapping("/{color}")
+    @GetMapping("/color/{color}")
     @ResponseStatus(HttpStatus.OK)
     public List<TShirtViewModel> getTshirtWithColor(@PathVariable("color") String color) {
         List<TShirtViewModel> tShirtViewModels = gameStoreService.findTShirtByColor(color);
-        if (tShirtViewModels == null)
-            throw new NotFoundException("No " + color + "tshirts available.");
+        if (tShirtViewModels.size() == 0)
+            throw new NotFoundException("No " + color + " tshirts available.");
         return tShirtViewModels;
     }
 
-    @GetMapping("/{size}")
+    @GetMapping("/size/{size}")
     @ResponseStatus(HttpStatus.OK)
     public List<TShirtViewModel> getTshirtWithSize(@PathVariable("size") String size) {
         List<TShirtViewModel> tShirtViewModels = gameStoreService.findTShirtBySize(size);
-        if (tShirtViewModels == null)
-            throw new NotFoundException("No " + size + "tshirts available.");
+        if (tShirtViewModels.size() == 0)
+            throw new NotFoundException("No " + size + " tshirts available.");
         return tShirtViewModels;
     }
 
