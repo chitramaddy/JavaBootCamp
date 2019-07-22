@@ -501,8 +501,8 @@ public class GameStoreService {
                 game.setQuantity(quantity);
                 gameDao.updateGame(game);
                 break;
-            case "tshirt":
-            case "tshirts":
+            case "t_shirt":
+            case "t_shirts":
                 TShirt tShirt = tShirtDao.getTShirt(itemId);
                 tShirt.setQuantity(quantity);
                 tShirtDao.updateTShirt(tShirt);
