@@ -39,11 +39,11 @@ public class PublisherDaoJdbcTemplateImplTest {
                 .forEach(book ->
                         bookDao.deleteBook(book.getBookId()));
 
-//        List<Author> authorList = authorDao.getAllAuthors();
-//
-//        authorList.stream()
-//                .forEach(author ->
-//                        authorDao.deleteAuthor(author.getAuthorId()));
+        List<Author> authorList = authorDao.getAllAuthors();
+
+        authorList.stream()
+                .forEach(author ->
+                        authorDao.deleteAuthor(author.getAuthorId()));
 
         List<Publisher> publisherList = publisherDao.getAllPublishers();
 
