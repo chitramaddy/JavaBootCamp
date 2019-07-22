@@ -29,18 +29,7 @@ paths:
         "422":
           description: Incomplete game information. Some required fields missing.
 
-    get:
-      summary: Retrieves all games.
-
-      responses:
-        "200":
-          description: Game object matching given ID.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Game"
-
-  /game/{id}:
+  /game/game/{id}:
     get:
       summary: Retrieves the entry for the game with the give ID.
       parameters:
@@ -97,11 +86,11 @@ paths:
         "422":
           description: Game ID on path mush match the ID in the Customer object
 
-  /game/{rating}:
+  /game/esrb/{esrb}:
     get:
       summary: Retrieves the entry for the game with the given esrb rating.
       parameters:
-        - name: rating
+        - name: esrb
           in: path
           required: true
           description: Info on games that has the ersb rating searched for.
@@ -117,11 +106,31 @@ paths:
               schema:
                 $ref: "#/components/schemas/Game"
 
-  /game/{title}:
+  /game/title/{title}:
     get:
       summary: Retrieves the entry for the game with the given esrb rating.
       parameters:
         - name: title
+          in: path
+          required: true
+          description: Info on games wiht the given title.
+          schema:
+            type: string
+            format: string
+            minimum: 1
+      responses:
+        "200":
+          description: Game object that has the given esrb rating.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Game"
+
+  /game/studio/{studio}:
+    get:
+      summary: Retrieves the entry for the game with the given studio name.
+      parameters:
+        - name: studio
           in: path
           required: true
           description: Info on games wiht the given title.
@@ -158,18 +167,7 @@ paths:
         "422":
           description: Incomplete Console information. Some required fields missing.
 
-    get:
-      summary: Retrieves all consoles.
-
-      responses:
-        "200":
-          description: Console object matching given ID.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Console"
-
-  /Console/{id}:
+  /console/{id}:
     get:
       summary: Retrieves the entry for the item with the give ID.
       parameters:
@@ -225,7 +223,7 @@ paths:
         "422":
           description: Console ID on path mush match the ID in the Console object.
 
-  /Console/{manufacturer}:
+  /console/{manufacturer}:
     get:
       summary: Retrieves the console by a particular manufacturer.
       parameters:
@@ -263,17 +261,6 @@ paths:
           description: Invalid request syntax.
         "422":
           description: Incomplete t-shirt information. Some required fields missing.
-
-    get:
-      summary: Retrieves all T-Shirt.
-
-      responses:
-        "200":
-          description: T-Shirt object matching given ID.
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/T-Shirt"
 
   /tshirt/{id}:
     get:
@@ -331,6 +318,44 @@ paths:
           description: T-Shirt successfully updated.
         "422":
           description: T-Shirt ID on path mush match the ID in the T-shirt object
+
+  /tshirt/color/{color}:
+    get:
+      summary: Retrieves the entry for the t-shirt with the give ID.
+      parameters:
+        - name: color
+          in: path
+          required: true
+          description: color of the t-shirts you would like to retrieve.
+          schema:
+            type: string
+            minimum: 1
+      responses:
+        "200":
+          description: t-shirt objects of given color.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/T-Shirt"
+
+  /tshirt/size/{size}:
+    get:
+      summary: Retrieves the entry for the t-shirt of a particular size.
+      parameters:
+        - name: size
+          in: path
+          required: true
+          description: color of the t-shirts you would like to retrieve.
+          schema:
+            type: string
+            minimum: 1
+      responses:
+        "200":
+          description: t-shirt objects of given color.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/T-Shirt"
 
   /invoice:
     post:
