@@ -147,7 +147,7 @@ public class GameStoreServiceTest {
         invoice.setCity("Princeton");
         invoice.setState("NJ");
         invoice.setZipCode("08540");
-        invoice.setItemType("Consoles");
+        invoice.setItemType("consoles");
         invoice.setItemId(1);
         invoice.setUnitPrice(new BigDecimal("100.36"));
         invoice.setQuantity(3);
@@ -163,7 +163,7 @@ public class GameStoreServiceTest {
         invoice1.setCity("Princeton");
         invoice1.setState("NJ");
         invoice1.setZipCode("08540");
-        invoice1.setItemType("Consoles");
+        invoice1.setItemType("consoles");
         invoice1.setItemId(1);
         invoice1.setUnitPrice(new BigDecimal("100.36"));
         invoice1.setQuantity(3);
@@ -199,11 +199,11 @@ public class GameStoreServiceTest {
         processingFeeDao = mock(ProcessingFeeDaoJdbcTemplateImpl.class);
 
         ProcessingFee processingFee = new ProcessingFee();
-        processingFee.setProductType("Consoles");
+        processingFee.setProductType("consoles");
         processingFee.setFee(new BigDecimal("14.99").setScale(2, RoundingMode.HALF_UP));
 
         ProcessingFee processingFee1 = new ProcessingFee();
-        processingFee1.setProductType("Consoles");
+        processingFee1.setProductType("consoles");
         processingFee1.setFee(new BigDecimal("14.99").setScale(2, RoundingMode.HALF_UP));
 
         doReturn(processingFee).when(processingFeeDao).getProcessingFee(processingFee.getProductType());
@@ -371,7 +371,7 @@ public class GameStoreServiceTest {
         invoice.setCity("Princeton");
         invoice.setState("NJ");
         invoice.setZipCode("08540");
-        invoice.setItemType("Consoles");
+        invoice.setItemType("consoles");
         invoice.setItemId(1);
         invoice.setUnitPrice(new BigDecimal("100.36").setScale(2, RoundingMode.HALF_UP));
         invoice.setQuantity(3);

@@ -461,8 +461,8 @@ public class GameStoreService {
                     return null;
                 else stock = game.getQuantity();
                 break;
-            case "tshirt":
-            case "tshirts":
+            case "t_shirt":
+            case "t_shirts":
                 TShirt tShirt = tShirtDao.getTShirt(itemId);
                 if (tShirt == null)
                     return null;
