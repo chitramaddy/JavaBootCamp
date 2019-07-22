@@ -357,7 +357,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/T-Shirt"
 
-  /invoice:
+  /order:
     post:
       summary: Creates a new invoice entry with the given information
       requestBody:
@@ -378,11 +378,11 @@ paths:
         "422":
           description: Incomplete invoice information. Some required fields missing
 
-  /invoice/{id}:
+  /invoice/{invoiceId}:
     get:
       summary: Retrieves the entry for the invoice with the give ID.
       parameters:
-        - name: id
+        - name: invoiceId
           in: path
           required: true
           description: ID of the invoice you would like to retrieve.
