@@ -32,8 +32,7 @@ public class AuthorDaoJdbcTemplateImpl implements AuthorDao {
             "delete from author where author_id = ?";
 
     private static final String UPDATE_AUTHOR_SQL =
-            "update author set first_name = ?, last_name = ?, street = ?, city = ?, state = ?, postal_code = ? phone = ?, email = ? " +
-                    "where author_id = ?";
+            "update author set first_name = ?, last_name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ?, email = ? where author_id = ?";
 
     @Autowired
     public AuthorDaoJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {

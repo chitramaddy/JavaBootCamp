@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f88e2d7e-9fff-41e8-8c37-f925fcb659b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/src/main/java/com/company/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/src/main/java/com/company/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/target/classes/com/company/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190613/U1M3L3Katas/target/classes/com/company/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190604/U1M1L6Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190604/U1M1L6Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/main/java/com/company/ChitraMadhanU1M5Summative/dao/AuthorDaoJdbcTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/main/java/com/company/ChitraMadhanU1M5Summative/dao/AuthorDaoJdbcTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/test/java/com/company/ChitraMadhanU1M5Summative/dao/AuthorDaoJdbcTemplateImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/test/java/com/company/ChitraMadhanU1M5Summative/dao/AuthorDaoJdbcTemplateImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/test/java/com/company/ChitraMadhanU1M5Summative/dao/BookDaoJdbcTemplateImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/test/java/com/company/ChitraMadhanU1M5Summative/dao/BookDaoJdbcTemplateImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/test/java/com/company/ChitraMadhanU1M5Summative/dao/PublisherDaoJdbcTemplateImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ChitraMadhanU1M5Summative/src/test/java/com/company/ChitraMadhanU1M5Summative/dao/PublisherDaoJdbcTemplateImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,7 +22,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CarLists.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,17 +50,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/company/MapFun.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/IterateAndPrint.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/CarLists.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/U1M3L2Katas.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
@@ -200,14 +203,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info id="DB Browser" />
+      <window_info id="Project Explorer" />
+      <window_info id="Job Explorer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27083334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info anchor="bottom" id="Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33286119" />
@@ -256,7 +265,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CarLists.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
+        <state relative-caret-position="184">
           <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
         </state>
       </provider>
