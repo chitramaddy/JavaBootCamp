@@ -117,7 +117,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tasker-service" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -217,7 +218,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/java/JavaBootCamp/ChitraMadhanU1Capstone/src/test/java/com/company/ChitraMadhanU1Capstone/service/GameStoreServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/../../../ChitraMadhanU1Capstone/src/test/java/com/company/ChitraMadhanU1Capstone/service/GameStoreServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
