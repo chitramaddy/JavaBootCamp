@@ -113,6 +113,8 @@ components:
           type: object
         category:
           type: string
+        advertisement:
+          type: string
 
       required:
         - description
