@@ -35,6 +35,11 @@ public class TaskerServiceLayer {
     @Value("${servicePath}")
     private String servicePath;
 
+    @Autowired
+    public TaskerServiceLayer() {
+
+    }
+
     public TaskerServiceLayer(TaskerDao dao, DiscoveryClient discoveryClient,
                               RestTemplate restTemplate, String randomAdserverServiceName,
                               String serviceProtocol, String servicePath) {
