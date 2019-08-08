@@ -16,6 +16,8 @@ This microservice is responsible for Comment CRUD functionality.
  - Registered with Eureka Service Registry
  - is a comment queue producer. Sends the comment using the comment-queue
  - Uses Feign for to send the generated comments to stwitter edge service
+ - Uses Cache for quick retrieval of data
+ - User JSR303 validation
  
  
  ### Has following end points:
