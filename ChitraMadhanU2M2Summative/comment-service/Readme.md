@@ -25,7 +25,7 @@ This microservice is responsible for Comment CRUD functionality.
  * localhost:6868/comments - for creating comments
  * localhost:6868/comments - for getting all the comments
  * localhost:6868/comments/{comment_id} - for getting comments with the given id
- * localhost:1777/comments/post/{postId} for getting comments by postId
+ * localhost:6868/comments/post/{postId} for getting comments by postId
  * localhost:6868/comments/{comment_id} - for updating comments with the given id
  * localhost:6868/comments/{comment_id} - for deleting comments with the given id 
   
